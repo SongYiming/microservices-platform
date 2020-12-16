@@ -418,12 +418,12 @@
         <repository>
             <id>releases</id>
             <name>releases Repository</name>
-            <url>http://192.168.28.138:8081/repository/maven-releases/</url>
+            <url>http://192.168.24.226:8081/repository/maven-releases/</url>
         </repository>
 
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://192.168.28.138:8081/repository/maven-snapshots/</url>
+            <url>http://192.168.24.226:8081/repository/maven-snapshots/</url>
             <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
@@ -458,12 +458,12 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <name>LeTao Zhu</name>
-            <email>zltdiablo@163.com</email>
-            <organizationUrl>https://github.com/zlt2000</organizationUrl>
-            <url>https://blog.csdn.net/zlt2000</url>
-        </developer>
-    </developers>
+<!--    <developers>-->
+<!--        <developer>-->
+<!--            <name>LeTao Zhu</name>-->
+<!--            <email>zltdiablo@163.com</email>-->
+<!--            <organizationUrl>https://github.com/zlt2000</organizationUrl>-->
+<!--            <url>https://blog.csdn.net/zlt2000</url>-->
+<!--        </developer>-->
+<!--    </developers>-->
 </project>

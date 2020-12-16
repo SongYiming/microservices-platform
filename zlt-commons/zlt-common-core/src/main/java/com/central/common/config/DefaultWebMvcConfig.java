@@ -4,6 +4,7 @@ import com.central.common.feign.UserService;
 import com.central.common.resolver.ClientArgumentResolver;
 import com.central.common.resolver.TokenArgumentResolver;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -19,6 +20,7 @@ import java.util.List;
  * Blog: https://zlt2000.gitee.io
  * Github: https://github.com/zlt2000
  */
+@Configuration
 public class DefaultWebMvcConfig implements WebMvcConfigurer {
 	@Lazy
 	@Autowired

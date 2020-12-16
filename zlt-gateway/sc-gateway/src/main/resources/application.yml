@@ -73,6 +73,12 @@ spring:
             - Path=/api-search/**
           filters:
             - StripPrefix=1
+        - id: intelligent
+          uri: lb://intelligent-system
+          predicates:
+            - Path=/api-intelligent/**
+          filters:
+            - StripPrefix=1
 #    sentinel:
 #      datasource.ds1.nacos:
 #        server-addr: ${spring.cloud.nacos.server-addr}
@@ -130,3 +136,11 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 1000
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway:
+            filter:
+              LoadBalancerClientFilter: TRACE
